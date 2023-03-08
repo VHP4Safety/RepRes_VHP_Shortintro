@@ -18,7 +18,7 @@ knitr::opts_chunk$set(echo = TRUE)
 
 ## Introducing Reproducible Research
 
-Reproducible research means that you work in a way that makes it possible for someone else to reach the same results from your data. Within ONTOX, this is an important concept, as reproducibility leads to increased rigour and quality of scientific outputs, and thus to greater trust in our results.Additionally, a reproducible workflow leads to a decrease in headaches over your own project data management, revisions, and using data or analyses from previous projects.  
+Reproducible research means that you work in a way that makes it possible for someone else to reach the same results from your data. Within VHP4Safety, this is an important concept, as reproducibility leads to increased rigour and quality of scientific outputs, and thus to greater trust in our results.Additionally, a reproducible workflow leads to a decrease in headaches over your own project data management, revisions, and using data or analyses from previous projects.  
 
 In general, the most important part of a reproducible workflow around a dataset is giving all meta data on your data (including your hypotheses, study design, specifics on your data collection and all the analysis steps you took, as well as any publications based on this data.) The second most important thing is version control: keeping track of any changes to your dataset, and to any documentation accompanying it. We will start with setting up a folder structure to store this information.
 
@@ -281,7 +281,7 @@ This may seem to be a bit too much, but try and see how much you could fill in a
 
 ## Version controlling data & data provenance
 
-Important in a project like ONTOX is data provenance. Provenance describes the the place of origin or earliest known history of something.
+Important in a project like VHP4Safety is data provenance. Provenance describes the the place of origin or earliest known history of something.
 
 Data provenance thus means that for each data point you use, you should be able to tell where it came from. Where was it collected, by whom, which experiment, etc.
 

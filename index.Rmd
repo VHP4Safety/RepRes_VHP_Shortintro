@@ -1,5 +1,5 @@
 ---
-title: "ONTOX Training Reproducible Research"
+title: "VHP4Safety short intro FAIR data"
 subtitle: "conquer the chaos"
 author: "Alyanne de Haan, PhD,  Marc Teunis, PhD"
 site: bookdown::bookdown_site
@@ -15,9 +15,9 @@ knitr::opts_chunk$set(echo = TRUE)
 
 ## Why you want to complete this workshop
 
-Research projects are chaotic and we all know how hard it can be to keep track of manuscipt versions, changes to datasets, which figure was generated from which file, etc.. However, when building an data platform such as within ONTOX, it is very important that every datapoint can be retraced to its origin.
+Research projects are chaotic and we all know how hard it can be to keep track of manuscipt versions, changes to datasets, which figure was generated from which file, etc.. However, when building an data platform such as within VHP4Safety, it is very important that every datapoint can be retraced to its origin.
 
-At the same time, many people store data in a way that works for them, but is almost impossible to reproduce once someone changes jobs. There are some easy systems to implement that conquer this chaos, make your work more productive, collaborations easier, and ONTOX possible. And also, save you a lot of time in the long run.
+At the same time, many people store data in a way that works for them, but is almost impossible to reproduce once someone changes jobs. There are some easy systems to implement that conquer this chaos, make your work more productive, collaborations easier, and VHP4Safety possible. And also, save you a lot of time in the long run.
 
 
 ## Learning objectives
@@ -47,40 +47,27 @@ Data sharing
 
 ## Schedule 
 
-Total of 4 hours (14:30 - 18:30) 
+Total of 2 hours (12:00 - 14:00) 
 
 Approximate durations for each item are displayed, because some exercises could last days or 5 minutes, depending on how deep you dive into them.
 
-#### 14:30-15:00
+#### 12:00-12:30
  - 10-20 min welcome, everyone introduces themselves
- - 10 min broad introduction to research data management and FAIR data in ONTOX
+ - 10 min broad introduction to research data management and FAIR data in VHP4Safety
  
-#### 15:00-15:50 hands-on storing your current data 
- - MAIN 5 min intro folder structure 
- - BREAKOUT (3 people, 15 min) DIY analysing and cleaning your own current data storage ways (exercise A1)
- - MAIN 5 min intro metadata
- - BREAKOUT (3 people, 15-20 min) DIY and discussion meta data (exercises A2 and A3)
+#### 12:30-13:00 hands-on storing your current data 
+ - 5 min intro Guerilla Analytics folder structure 
+ - 15 min DIY analysing and cleaning your own current data storage ways (exercise A1)
+ - 5 min intro metadata
 
-#### 15:50-16:10 sticky notes /discussion
- - MURAL on incentives and barriers for using reproducible methods
+#### 13:00-13:10 break
 
-#### 16:10-16:30 break
-
-#### 16:30-18:10 hands-on sharing your current data
- - MAIN 10 min intro: The usual problematic workflow
- - MAIN 5 min split group
- - collaboration and digital data
-   + BREAKOUT (5 people 30 min) 
-     + Option 1: *5-10 min DIY sharing excel files* (exercise B1) and *15-20 min DIY data in excel* (exercise B2) 
-     + Option 2: *5-10 min DIY sharing excel files* (exercise B1) and *15-20 min DIY github* (exercise C1, C2, C3) 
- - machine readable data and workflows
-   + MAIN 10 min demo AI: why we need it to be machine readable, tidy data / mermaid, version control
-   + BREAKOUT (5 people, 45 min) 
-     + Option 1: *15-20 min DIY tidy data* (exercise B3) and *20-30 min version control* (exercise B4 and B5)
-     + Option 2: finish C1 till C3, and *45 min visualising workflows* (exercise C4 and C5)
+#### 13:10-13:50 hands-on sharing your current data
+ - 10 min intro: The usual problematic workflow and how to do it FAIR
+ - 5 min collaboration and digital data (exercise B1)
+ - 15 min collaboration and digital data (exercise B2)
+ - 10 min demo machine readable data and workflows
      
-#### 18:10- 18:30
- - MAIN/MURAL immediate plans for tomorrow: Prioritization of training needs
- - closure
+#### 13:50-14:00 closure
 
 
