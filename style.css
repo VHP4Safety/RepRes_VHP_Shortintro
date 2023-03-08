@@ -18,11 +18,11 @@ pre {
 
 /* ---------- Links ----------------- */
 .book .book-body .page-wrapper .page-inner section.normal a {
-  color: #da521b;
+  color: #e0017b;
 }
 
 .book .book-body .page-wrapper .page-inner section.normal a:hover {
-color: #da521b; /* darker color when hovering */
+color: #e0017b; /* darker color when hovering */
 text-decoration: none;
 }
 
@@ -66,12 +66,12 @@ text-decoration: none;
 
 
 .book .book-summary ul.summary li.active>a {
-  color: #da521b;
+  color: #e0017b;
 }
 
 .book .book-summary ul.summary li a:hover {
   background-color: #ffffff;
-  color: #da521b;
+  color: #e0017b;
 }
 
 
