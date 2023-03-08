@@ -13,4 +13,4 @@ bookdown::gitbook:
     toc:
       collapse: section
       scroll_highlight: yes
-      before: <h4 class=".paddingtitel "> Reproducible Research </h4>
+      before: <h4 class=".paddingtitel "> short intro FAIR data </h4>

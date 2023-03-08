@@ -20,7 +20,7 @@ knitr::opts_chunk$set(echo = TRUE)
 
 Reproducible research means that you work in a way that makes it possible for someone else to reach the same results from your data. Within VHP4Safety, this is an important concept, as reproducibility leads to increased rigour and quality of scientific outputs, and thus to greater trust in our results.Additionally, a reproducible workflow leads to a decrease in headaches over your own project data management, revisions, and using data or analyses from previous projects.  
 
-In general, the most important part of a reproducible workflow around a dataset is giving all meta data on your data (including your hypotheses, study design, specifics on your data collection and all the analysis steps you took, as well as any publications based on this data.) The second most important thing is version control: keeping track of any changes to your dataset, and to any documentation accompanying it. We will start with setting up a folder structure to store this information.
+In general, the most important part of a reproducible workflow around a dataset is giving all meta data on your data (including your hypotheses, study design, specifics on your data collection and all the analysis steps you took, as well as any publications based on this data.) The second most important thing is version control: keeping track of any changes to your dataset, and to any documentation accompanying it. We will start with setting up a folder structure to store this information. Version control itself will be the topic of a follow-up workshop.
 
 [Click for more information: Symposium report, October 2015. Reproducibility and reliability of biomedical research: improving research  practice](https://acmedsci.ac.uk/viewFile/56314e40aac61.pdf)
 
@@ -49,7 +49,6 @@ To replicate a scientific study you would need some information from and informa
 ## Guerilla analytics folder structure
 
 I you set up your projects in a way that makes it easy to find all this information, you will save yourself and others a lot of time. To help you start building this we will use the `Guerrilla Analytics` framework, as described by Enda Ridge in [this booklet](https://www.elsevier.com/books/T/A/9780128002186).  
-
 Some key Guerrilla Analytics Principles to remember:
 
  >1. Space is cheap, confusion is expensive
@@ -60,9 +59,9 @@ Some key Guerrilla Analytics Principles to remember:
 
 <p style="font-size:14px">[Guerrilla Analytics book by Enda Ridge, ](https://guerrilla-analytics.net/)</p>
 
-### non reproducible folder structure
+### Non reproducible folder structure
 
-A quite common way to organise our digital files, is by making categories. For instance, both of your teachers today organised their laptops previously similar to:
+A quite common way to organise our digital files, is by making categories. For instance, both of your teachers today, previously organised their laptops similar to:
 
 ```{r, eval=F, include=F}
 fs::dir_tree(here::here("wrong_structure"))
@@ -98,17 +97,17 @@ This makes sense but has at least two major drawbacks:
  2. Things will change. There will be new categories and new types of files, you had not thought of before. Where will these go?
 
 
-### reproducible folder structure
+### Reproducible folder structure
 
 So when managing files in projects adhere to the following guidelines
 
- 1. **Create a separate folder for each analytics project** . Keep the unit of a project small. 
+ 1. **Create a separate folder for each (analytics) project** . Keep the unit of a project small. So "VHP4Safety" is way too big.
  1. **Use the same folder structure in every project** Better even: agree on a folder structure as group.
- 1. **Do not deeply nest folders** (max 2-3 levels, so no *project/documentation/applications/metc/first_communication/input/docs/moredocs/mail.txt*)
+ 1. **Do not deeply nest folders** (max 2-3 levels, so no *project/documentation/applications/metc/first_communication/input/docs/moredocs/mail.txt* or my personal favorite *project/documentation/cleanthis/tobecleaned/courses/docs*)
  1. **Keep information about the data, close to the data**. Save a README.txt in the data folder with for example descriptions about variables and meta data.
  1. **Store each dataset in its own sub-folder.** example below.
  1. **Do not change file names or move them.** Don't change a file name of a file you recieve or download from the internet. If you absolutely have to, record your changes in the README.txt file.
- 1. **Do not manually edit data source files.** if you can prevent it. You can (_almost_) always solve this using code. If you absolutely have to, record your changes in the README.txt file.
+ 1. **Do not manually edit data source files.** if you can prevent it. You can (_almost_) always solve this using code.If you absolutely have to, record your changes in the README.txt file. (another reason to learn programming! Try [R](https://r4ds.had.co.nz/) which we recommend in life sciences, [Python](https://wesmckinney.com/book/), [Julia](https://julialang.org/learning/), etc.)
  1. **In code, use relative paths** (so not mylaptop/users/alyanne/studyA/data/etc) as absolute paths will change over time.
 
 So for instance, your folder structure could look like this:
@@ -152,7 +151,6 @@ Look at your research projects. Which example folder structure does it resemble 
  1. Book a timeslot (e.g. 1 morning) in your calendar somewhere this month to fix the folder structure of your current projects.
 
 
-
 ## File names
 
 Well, having neat and tidy folders of course won't be enough. There is more needed to work reproducibly and save future you a headache when revisiting a project.
@@ -191,7 +189,7 @@ Take a look at this [Wikipedia image of cocoa pods](https://commons.wikimedia.or
 
 Meta information for data files, like type of variables, ranges, units, number of observations or subjects in a study, type of analysis or experimental design often goes in a README.txt file or a sheet in the Excel file containing the data. Keep the readme information close to the data file. Also, information about who is the owner of the data or who performed the experiment when and where and with what type of device or reagents is very useful to include.
 
-Over at the [The Carpentries Incubator](https://carpentries-incubator.org/), there is a really nice example of meta data in life sciences:
+Over at the [The Carpentries Incubator](https://carpentries-incubator.github.io/fair-bio-practice/05-intro-to-metadata/index.html#types-of-metadata), there is a really nice example of meta data in life sciences.
 
 According to [How to FAIR](https://howtofair.dk/) we can distinguish between three main types of metadata:
 
@@ -204,7 +202,14 @@ According to [How to FAIR](https://howtofair.dk/) we can distinguish between thr
    
 Descriptive and structural metadata should be added continuously throughout the project.
 
-## **Exercise A2:** Identifying metadata types {.blauw}
+## Key points
+
+ - use a project centered folder structure and be consistent 
+ - keep meta data with your data
+ - don't change data files, use versioning and code
+ - always keep current, used, data in the projectA/data/data_current folder, store older versions in subfolders called `projectA/data/v1`, `projectA/data/v2` etc
+
+## **EXTRA Exercise A2:** Identifying metadata types {.blauw}
 
 Exercise by [FAIR in (biological) practice course on carpentries-incubator](https://carpentries-incubator.github.io/fair-bio-practice/05-intro-to-metadata/index.html#types-of-metadata). (see below for full reference)
 
@@ -225,7 +230,7 @@ In groups, identify different types of metadata (administrative, descriptive, st
 
 ## {.unlisted .unnumbered}
 
-<details><summary>Click here for a solution</summary>
+<details><summary>Click here for the answer</summary>
 
  - Administrative metadata marked in blue
  - Descriptive metadata marked in orange
@@ -271,7 +276,7 @@ Here is a nice example file by the university of Bath for [bioinformatics projec
 
 This may seem to be a bit too much, but try and see how much you could fill in and keep the template for future projects! 
 
-## **Exercise A3:** starting to add meta data files {.blauw}
+## **EXTRA Exercise A3:** starting to add meta data files {.blauw}
 
 15 minutes 
 
@@ -279,7 +284,7 @@ This may seem to be a bit too much, but try and see how much you could fill in a
  - Start to add meta data files to your current most active project if you don't have them. If you don't have an agreed on format, just open a word/excel document and start adding administrative, descriptive and structural meta data. Remember that any metadata is better than none.
 
 
-## Version controlling data & data provenance
+## EXTRA Version controlling data & data provenance
 
 Important in a project like VHP4Safety is data provenance. Provenance describes the the place of origin or earliest known history of something.
 
@@ -301,9 +306,4 @@ knitr::include_graphics(
     "1539096097.png"))
 ```
 
-## key points
 
- - use a project centered folder structure and be consistent 
- - keep meta data with your data
- - don't change data files, use versioning
- - always keep current, used, data in the main /data folder, store older versions in subfolders called `v1`, `v2` etc

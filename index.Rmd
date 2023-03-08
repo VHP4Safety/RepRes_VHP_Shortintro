@@ -15,35 +15,32 @@ knitr::opts_chunk$set(echo = TRUE)
 
 ## Why you want to complete this workshop
 
-Research projects are chaotic and we all know how hard it can be to keep track of manuscipt versions, changes to datasets, which figure was generated from which file, etc.. However, when building an data platform such as within VHP4Safety, it is very important that every datapoint can be retraced to its origin.
+In this workshop we will focus on the I and R part of FAIR. 
+
+Research projects are chaotic and we all know how hard it can be to keep track of manuscipt versions, changes to datasets, which figure was generated from which file, etc.. However, when building a data platform such as within VHP4Safety, it is very important that every datapoint can be retraced to its origin.
 
 At the same time, many people store data in a way that works for them, but is almost impossible to reproduce once someone changes jobs. There are some easy systems to implement that conquer this chaos, make your work more productive, collaborations easier, and VHP4Safety possible. And also, save you a lot of time in the long run.
 
+
+[TLDR] 
 
 ## Learning objectives
 
 After this workshop you:
 
  - Can store your research projects (data, code, manuscripts, etc) in a future proof way, that fascilitates collaboration, and saves you a lot of time if you ever want to revisit, share or alter your projects. 
- - Know which information needs to be stored with data, and how to keep these together when collaborating with others.
- - Can keep your projects under version control, so you can always backtrace what changed, when, and by whom.
- - Applied all this to your current most active research project
+ - Have an idea of which information needs to be stored with data, and how to keep this together when collaborating with others.
  - Can start tomorrow (or well, next monday) with applying this in your everyday work.
+
+## This reader
+We build this reader both as a guide to the workshop, and for future reference. We will use some the exercises in the workshop, most of the text is there to make sure you can still use this material in a couple of months.
 
 ## Contents 
 
 This workshop is devided in 2 parts: 
 
-Practical Data Handling
-
- - Folder structure
- - meta data
- 
-Data sharing
-
- - Sending others your data or code 
- - Receiving data or code
- - Version control 
+- Practical Data Handling (folder structure, metadata)
+- Data sharing (communicating data, machine readable data)
 
 ## Schedule 
 
@@ -70,4 +67,19 @@ Approximate durations for each item are displayed, because some exercises could 
      
 #### 13:50-14:00 closure
 
+## Additional exercises and material
 
+We added some useful (according to us) material and extra exercises to this reader, to give you a headstart when you want to continue improving your FAIR data skills.  
+
+Some of the material has been reused from other courses, so keep that in mind. But we did not want to withold the possibility for you.
+
+## TLDR
+
+I you have absolutely no time other than reading this message, please try to do the following:
+
+ - use a project centered folder structure, not a task centered one. 
+ - always let name_of_your_document.docx be the current version. 
+ - keep meta data with your data.
+ - don't change data files, use versioning.
+ - keep your data files in [tidy format](https://r4ds.had.co.nz/tidy-data.html).
+ - don't use formatting to convey information in Excel (e.g. colors).

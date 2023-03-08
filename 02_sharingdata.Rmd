@@ -19,8 +19,6 @@ knitr::opts_chunk$set(
 
  - I don't use code (R, Python, Matlab, Julia,  etc) to analyse my data
  - I would like to use a tidy data format to make my data machine readable
- - I would like to use onedrive / google docs / similar software for version controlling my work.
-
 
 ## **Exercise B1: ** reflection {.blauw}
 
@@ -33,18 +31,12 @@ Discuss in pairs of 2.
 ## Introduction
 Whether you are working in an experimental, computational or design oriented scientific field, data is often either the final or at least an important product of your scientific research. When working in science, we seldom work in isolation, so sharing data and being able to track mutations and versions of the data and it's connected metadata should be an import aspect of your work. Because usually we grow into a project without having much education on very practical things such as where to store data, how to handle file structure, how to define versions of the data and how to handle mutations and version change, we decided to focus on these aspects in a very practical manner. 
 
-In this part of the workshop, we will provide you with hands-on practical handles on how to collaborate on data. We will provide you with ways how to communicate on your data workflow and you will learn how to administer and track changes to your data. We will share some good practices on how to deal with sharing of data with others as well.
-
-The contents of this part of the workshop:
-
- 1. sharing and working with data in Excel
- 1. Version control on data and text.
- <!-- 1. Sending (and recieving) data via email and storing data online (Google Drive). -->
+In this part of the workshop, we will provide you with hands-on practical handles on how to collaborate on data. 
 
 
-## Data flows in ONTOX
+## Data flows in VHP4Safety
 
-ONTOX is a data intensive project. Meaning, there is a lot of data collection going on in the project. While there are several ongoing developments to automate and standardize the data formats in ONTOX, many of us use a spreadsheet program such as MS Excel to gather and document data. In a large AI based project such as ONTOX, we need to keep in mind that the data does not only need to be understandable for us. It also needs to be machine readable (or at the very least: really easy to convert to machine readable data). Therefore, we will discuss how to best store data in tabular (in this case spreadsheet) formats.
+VHP4Safety is a data intensive project. Meaning, there is a lot of data collection going on in the project. While there are several ongoing developments to automate and standardize the data formats in VHP4Safety, many of us use a spreadsheet program such as MS Excel to gather and document data. In a large AI based project such as VHP4Safety, we need to keep in mind that the data does not only need to be understandable for us. It also needs to be machine readable (or at the very least: really easy to convert to machine readable data). Therefore, we will discuss how to best store data in tabular (in this case spreadsheet) formats.
 
 ## **Exercise B2: ** What can go wrong with data in Excel {.blauw}
 
@@ -91,7 +83,7 @@ It contains data similar to the presented data before from experiments on plants
 </details>
 </br>
 
-## Some common spreadsheat errors (that have been spotted in ONTOX):
+## Some common spreadsheat errors (that have been spotted in VHP4Safety or similar projects):
 (shortened  and reworded accordingly slightly from source at carpentries-incubator.github.io)
 
  - **Not filling in zeros** 
@@ -105,7 +97,7 @@ Source: [FAIR in (biological) practice](https://carpentries-incubator.github.io/
 
 ## Tidy machine readable data
 
-As discussed, tidy data is a way of organising your data in a neat and structured way. If you make your data tidy, it is ensured that it is machine readable (thus can be "shared with AI's"). This is important in ONTOX, as we want to use the data to build an AI platform.
+As discussed, tidy data is a way of organising your data in a neat and structured way. If you make your data tidy, it is ensured that it is machine readable (thus can be "shared with AI's"). This is important in VHP4Safety, as we want to use the data to build an *in silico* model.
 
 So for future reference, what is tidy data again:
 
@@ -151,11 +143,13 @@ So the following table would by untidy, as there are multiple observations per r
 | Mary 	| 8    	| 7.9    	| 5           	| 9   	|
 
 
+As you can see, this is not only not very machine-readable, it is also not immediately clear from the headers what we are looking at here. You would need metadata to tell you what this is about.
+
 This would be the tidy version:
 
 *Table3: Example of untidy data made tidy*
 
-| student  	| sample      	| stairs_walked 	|
+| student  	| sample      	| stairs_walked_monday 	|
 |:----------	|:-------------	|:-------	|
 | John   	| 1        	| 7.5   	|
 | John   	| 2      	| 6     	|
@@ -167,7 +161,16 @@ This would be the tidy version:
 | Mary 	| 4         	| 9     	|
 
 
-## **Exercise B3:** tidy data {.blauw}
+
+## Key Points
+
+ - keep your excel files machine readable and umambiguous
+ - don't use formatting to convey information in Excel
+ - use tidy data if possible
+ - version control takes some effort, but saves a lot of confusion -thus time- in the long run
+ - always let name_of_your_document.docx be the current version. 
+
+## **EXTRA Exercise B3:** tidy data {.blauw}
 
 (15 minutes)
 
@@ -183,7 +186,7 @@ Make this dataset machine readable and store it in a reproducible way. Keep the 
  1. data always needs meta data
 
 
-## Version control on documents and data
+## EXTRA Version control on documents and data
 You may know from experience how an unnoticed change in a document, the use of the wrong version or the loss of edits can lead to loss of time invested, frustration and above all confusion! This is why keeping a record on all mutations on a document or the data is important. There usually will be [quite a lot](https://phdcomics.com/comics/archive.php?comicid=1531). Especially, tracking mutations on the data is important for another reason: reproducibility and validity of conclusions (or any other interpretation or cummunication) connected to the data.
 
 Version control is the process of tracking and managing different versions (or drafts) of a file / document / dataset. By doing so, you always know what is the most recent version of a file, when something was changed and what was changed.
@@ -204,7 +207,7 @@ If you use code to analyse your data and/or write your manuscripts (e.g. Latex, 
 
 If you use Word and Excel / imageJ / SPSS / etc, keep reading.
 
-## Project Version Control: manually
+## EXTRA Project Version Control: manually
 
 One option that does not make use of storing changes separately is this (proposed) method doing version control manually. It is, however, very easy to implement starting today:
 
@@ -244,7 +247,7 @@ Marc: Added dataset 3 (/data_raw/dataset3_th.csv) from Theme Hospital and wrote 
 Marc: Added feedback from Francois (/docs/mail_Francois.docx) to /manuscript/manuscript.docx. 
 ```
 
-## Document Version control using onedrive / google docs
+## EXTRA Document Version control using onedrive / google docs
 
 If you are only working on a document, e.g. writing a proposal together with 3 colleagues with no other files involved, you may instead choose to version control the document only. You can do this by using  onedrive or google docs to store the document. 
 
@@ -254,7 +257,7 @@ Choose one of the 2 links below to read based on whether your organisation uses 
 
 [Google docs](https://www.techrepublic.com/article/version-history-essentials-for-google-docs-sheets-and-slides/)
 
-## Document Version control manually
+## EXTRA Document Version control manually
 You could also so this manually, especially if you are not collaborating a lot on this particular file.
 
 Do not fall into the trap of copying your document, then renaming it document_version2.docx, and repeating this step every time. Think the other way around:
@@ -273,7 +276,7 @@ Keep a changelog in table format at the beginning of your document or in a file 
 
 
 
-## **Exercise B4:** version control {.blauw}
+## **EXTRA Exercise B4:** version control {.blauw}
 
 (5 minutes)
 
@@ -285,7 +288,7 @@ Take a look at your research project folders.
  - How would you prefer to version control your next project?
  - What would you need to start doing so?
 
-## **Exercise B5:** workflow {.blauw}
+## **EXTRA Exercise B5:** workflow {.blauw}
 
 (15 minutes)
 
@@ -306,10 +309,3 @@ Discuss the issues you see within the breakout room, and plan 1 morning in your 
 
 (Exercise borrowed from the [Educopia / Institute of museum and library service, Electronic Theses and Dissertations (ETD)plus Guidance Briefs](https://educopia.org/etd-plus-guidance-briefs/) shared under creative commons license [CC-BY](https://creativecommons.org/licenses/by/4.0/) )
 
-## Key Points
-
- - keep your excel files machine readable and umambiguous
- - don't use formatting to convey information in Excel
- - use tidy data if possible
- - version control takes some effort, but saves a lot of confusion -thus time- in the long run
- - always let name_of_your_document.docx be the current version. 
