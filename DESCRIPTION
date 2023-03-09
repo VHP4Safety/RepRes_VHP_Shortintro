@@ -12,8 +12,8 @@ Authors@R:
     person("Marc", "Teunis", , "marc.teunis@hu.nl", role = c("aut", "cre"),
            comment = c(ORCID = "https://orcid.org/0000-0002-3496-6669"))
     )
-Description: This R package contians the workshop materials for the "ONTOX Reproducible
-    Research" Workshop held in July 2022"
+Description: This R package contians the workshop materials for the "VHP4Safety Reproducible
+    Research" Workshop held in March 2023"
 License: CC BY-NC 4.0
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
