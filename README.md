@@ -4,6 +4,8 @@ Actually, an IR data workshop, FA not included.
 
 This repo contains a reader for a 2h workshop on proper reproducible data etiquette, in bookdown format.
 
+hosted: https://lesmaterialen.rstudio.hu.nl/reproducible_research_workshop/
+
 ## Workshop contents
 
  1. Practical Data Handling, folder structure, meta data and provenance
